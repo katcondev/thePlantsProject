@@ -2,3 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+#learn {
+    background-image: url("/assets/images/learn.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
+   }
+
+   #mentor {
+    background-image: url("/assets/images/mentor.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
+   }
