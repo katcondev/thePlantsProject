@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Plants Project - Mentor</title> <link href="assets/css/style.css" rel="stylesheet">
+    <title>The Plants Project - Mentor</title> <link href="assets/css/mentorForm.css" rel="stylesheet">
 </head>
 <body class="bg-green-50">
     <header class="container">
@@ -27,18 +27,47 @@
               Mentor
             </a>
             <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-800 mr-4">
-                Submissions
+              Submissions
             </a>
             <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-800 mr-4">
               Database
             </a>
-            
           </div>
           <div>
             <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
           </div>
         </div>
       </nav>
-    </header>  
+    </header>
+    
+    <section>
+      <!--mentor form-->
+    <div class="mentor-form">
+      <h3>Get Started Now!</h3>
+      <p>Fill out this form and become a mentor today!</p>
+      <!--mentor's info-->
+      <form>
+        <label for="firstName">First Name:</label>
+        <input type="text" placeholder="First Name" name="firstName" id="firstName" class="form-input"/>
+        <br/>
+
+        <label for="lastName">Last Name:</label>
+        <input type="tel" placeholder="Last Name" name="lastName" id="lastName" class="form-input"/>
+        <br/>
+
+        <label for="email">Email Address:</label>
+        <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
+        <br/>
+
+        <label for="mentorsDescription">Tell us more about your houseplant experience</label>
+        <input type="text" placeholder="Your houseplant experience" name="mentorsDescription" id="mentorsDescription" class="form-input"/>
+        <br/>
+
+        <button type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+    </section>
 </body>
 </html>
