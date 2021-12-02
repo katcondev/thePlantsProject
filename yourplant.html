@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plants Project - Your Plant!</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+<body class="bg-gray divide-y divide-green">
+    <header class="container">
+      <nav class="flex items-center justify-between flex-wrap bg-gray p-6">
+       <div class="flex items-center flex-shrink-0 text-white mr-6">
+         
+         <a href="index.html"><img class="h-48 " src="assets/images/logo.svg"></a>
+         <span class="ml-8 text-gray-dark text-4xl font-roboto tracking-tight"  id="name"><a href="index.html">The Plants Project</a></span>
+       </div>
+       <div class="block lg:hidden">
+         <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+           <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+         </button>
+       </div>
+       <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+         <div class="text-sm lg:flex-grow">
+         </div>
+         <div>
+           <a href="learn.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Learn </a>
+           <a href="mentor.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Mentor</a>
+           <a href="submissions.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Submissions </a>
+           <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase">Database</a>
+         </div>
+       </div>
+     </nav>
+   </header>  
+   <main></main>
+           <div class="hwrapper container mx-auto px-24 ">
+            <div class="quiz pt-10 mt-10">
+           <div class="highs">
+               <h1 class="text-2xl font-roboto mb-5">High Scores</h1>
+               <p class="mb-5">Knausgaard banjo authentic, hashtag kitsch kombucha yuccie literally kale chips portland. 90's gluten-free asymmetrical, mustache tilde hell of brooklyn cray. Everyday carry succulents kombucha cray slow-carb hoodie, trust fund edison bulb unicorn ramps. Viral direct trade af craft beer health goth roof party, twee freegan. Lomo hoodie viral, bespoke pinterest hell of lumbersexual cronut single-origin coffee vaporware drinking vinegar air plant.</p>
+               <ol id="high-score"></ol>
+               <button class="uppercase bg-green p-2 mt-5 text-gray hover:text-green-light rounded shadow text-xl font-roboto" id="back-button" >Retake Quiz</button>
+               <button class="uppercase bg-green p-2 mt-5 text-gray hover:text-green-light rounded shadow text-xl font-roboto" id="clear-button"  value="reset">Clear Scores</button>
+           </div>
+       </div></div>
+      
+       <script src="assets/js/yourplant.js"></script>
+</body>
+</html>

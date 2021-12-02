@@ -13,15 +13,31 @@ var questions =[
         answer: "curly brackets"
     },
     {
-        title: "Arrays in Javascript can be used to store _____.",
-        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        title: "Colorful plant?",
+        choices: ["nah, not for me", "yes, please"],
+        answer: "all of the above"
+    },  
+    {
+        title: "What sized plant are you looking for?",
+        choices: ["small", "i want them big", "somewhere in between would be cool"],
+        answer: "curly brackets"
+    },
+    {
+        title: "Colorful plant?",
+        choices: ["nah, not for me", "yes, please"],
         answer: "all of the above"
     },
     {
-        title: "Commonly used data types do not include:",
-    choices: ["strings", "booleans", "alerts", "numbers"],
-    answer: "booleans"
-    },  
+        title: "What sized plant are you looking for?",
+        choices: ["small", "i want them big", "somewhere in between would be cool"],
+        answer: "curly brackets"
+    },
+    {
+        title: "Colorful plant?",
+        choices: ["nah, not for me", "yes, please"],
+        answer: "all of the above"
+    },
+    
 ]
 var score = 0;
 var questionIndex = 0;
@@ -33,7 +49,7 @@ var questionWrapper = document.querySelector(".quiz");
 var quizQuestions = document.querySelector(".questions");
 
 //quiz timer
-var timeLeft = 75;
+var timeLeft = 100;
 var interval = 0;
 var timePenalty = 10; 
 var createUlEl = document.createElement("ul");
@@ -50,7 +66,7 @@ var startquiz = function () {
             if (timeLeft <= 0) {
                 clearInterval(interval);
                 finishQuiz();
-                currentTime.textContent = "You ran out of time!";
+                currentTime.textContent = "Just go a little faster!";
             }
         }, 1000)
     }
@@ -192,7 +208,7 @@ function finishQuiz() {
             var updateScore = JSON.stringify(userScores);
             localStorage.setItem("userScores", updateScore);
             
-            window.location.replace("./highscores.html");
+            window.location.replace("./yourplant.html");
 
             
         }

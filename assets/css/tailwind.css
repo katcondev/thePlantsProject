@@ -31,19 +31,24 @@
      
       padding-bottom: 20px;
   }
+
 .quiz li {
+    background-color: #7b8c52;
     margin-top: 8px;
     padding: 5px 20px;
     font-size: 22px;
-    color: black;
+    color: #f2f2f2;
    
 }
+
+
 .quiz li:hover {
-  background-color: purple;
-  color: white;
+  background-color:#485933;
+  color: #f2f2f2;
 
 }
   .no-bullets {
+   
     text-decoration: none;
     list-style-type: none;
 }
