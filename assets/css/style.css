@@ -13554,10 +13554,6 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
-.bg-hero-pattern {
-  background-image: url('../assets/images/plantImages/begonias.jpeg');
-}
-
 .from-transparent {
   --tw-gradient-from: transparent;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -18440,7 +18436,7 @@ video {
 }
 
 .timeleft {
-  color: red;
+  color: #f2f2f2;
   text-align: center;
 }
 
@@ -31343,10 +31339,6 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
   .sm\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  }
-
-  .sm\:bg-hero-pattern {
-    background-image: url('../assets/images/plantImages/begonias.jpeg');
   }
 
   .sm\:from-transparent {
@@ -49029,10 +49021,6 @@ and (-webkit-min-device-pixel-ratio: 3) {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .md\:bg-hero-pattern {
-    background-image: url('../assets/images/plantImages/begonias.jpeg');
-  }
-
   .md\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -66711,10 +66699,6 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
   .lg\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  }
-
-  .lg\:bg-hero-pattern {
-    background-image: url('../assets/images/plantImages/begonias.jpeg');
   }
 
   .lg\:from-transparent {
@@ -84397,10 +84381,6 @@ and (-webkit-min-device-pixel-ratio: 3) {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
-  .xl\:bg-hero-pattern {
-    background-image: url('../assets/images/plantImages/begonias.jpeg');
-  }
-
   .xl\:from-transparent {
     --tw-gradient-from: transparent;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(0, 0, 0, 0));
@@ -102079,10 +102059,6 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
-  }
-
-  .\32xl\:bg-hero-pattern {
-    background-image: url('../assets/images/plantImages/begonias.jpeg');
   }
 
   .\32xl\:from-transparent {
