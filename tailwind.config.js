@@ -2,13 +2,24 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'roboto': ['Roboto', 'sans-serif']
+      }
+    },
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      green: {
+        light: '#7b8c52',
+        DEFAULT: '#485933',
+        dark: '#1e2616',
+      },
+      gray: {
+        DEFAULT: '#f2f2f2', 
   },
   variants: {
     extend: {},
   },
-  plugins: [
-  require('@tailwindcss/typography'),
-
-  ],
-}
+  plugins: [],
+}}}
