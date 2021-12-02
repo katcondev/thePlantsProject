@@ -3,13 +3,13 @@
 //set of questions array
 var questions =[
     {
-        title: "A very useful tool used during development and debugging for printing content to the debugger is:",
-        choices: ["Javascript", "terminal/bash", "for loops", "console log"],
-        answer: "for loops"
+        title: "Do you consider yourself forgetful? (about how often to water a house plant)",
+        choices: ["I already forgot what I ate for dinner last night", "99% of the time I won’t forget", "I’m alright, not too bad"],
+        answer: "99% of the time I won’t forget"
     },
     {
-        title: "String values must be enclosed within ____ when being assigned to variables.",
-        choices: ["commas", "curly brackets", "quotes", "parenthesis"],
+        title: "What sized plant are you looking for?",
+        choices: ["small", "i want them big", "somewhere in between would be cool"],
         answer: "curly brackets"
     },
     {
@@ -33,7 +33,7 @@ var questionWrapper = document.querySelector(".quiz");
 var quizQuestions = document.querySelector(".questions");
 
 //quiz timer
-var timeLeft = 45;
+var timeLeft = 75;
 var interval = 0;
 var timePenalty = 10; 
 var createUlEl = document.createElement("ul");
@@ -96,12 +96,12 @@ function verify(event) {
 
         if (element.textContent === questions[questionIndex].answer){
             score++;
-            createDivEl.textContent = "Correct!"
+            createDivEl.textContent = "Great!"
         }
 
         else {
             timeLeft = timeLeft -timePenalty;
-            createDivEl.textContent = "Incorrect! The correct choice is " + questions[questionIndex].answer;
+            createDivEl.textContent = "Great!";
         }
 
     }

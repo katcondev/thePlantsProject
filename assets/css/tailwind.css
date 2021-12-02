@@ -15,9 +15,43 @@
     background-position: center; 
     background-repeat: no-repeat; 
     background-size: cover; 
-    
    }
 
+   .quiz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+  .quiz p {
+      font: 20px sans-serif;
+  }
+
+  .quiz ul {
+      font: 25px sans-serif;
+     
+      padding-bottom: 20px;
+  }
+.quiz li {
+    margin-top: 8px;
+    padding: 5px 20px;
+    font-size: 22px;
+    color: black;
+   
+}
+.quiz li:hover {
+  background-color: purple;
+  color: white;
+
+}
+  .no-bullets {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.timeleft {
+    color: red;
+    text-align: center;
+}
 
    /* Portrait and Landscape */
 @media only screen 
