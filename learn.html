@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Plants Project - Learn</title>
+    <link href="assets/css/tailwind.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
    
 </head>
@@ -13,7 +14,7 @@
     <nav class="flex items-center justify-between flex-wrap bg-gray p-6">
      <div class="flex items-center flex-shrink-0 text-white mr-6">
        
-       <a href="index.html"><img class="h-28" src="assets/images/logo.svg"></a>
+       <a href="index.html"><img class="h-28 " src="assets/images/logo.svg"></a>
        <span class="ml-8 text-green text-4xl font-roboto tracking-tight"  id="name"><a href="index.html">The Plants Project</a></span>
      </div>
      <div class="block lg:hidden">
@@ -34,14 +35,17 @@
    </nav>
  </header>  
  <main></main>
-    <div class="container mx-auto px-10 ">
-      <div class="quiz">
-        <h1 class="text-2xl">Coding Quiz Challenge</h1>
-        <p class="mt-2">Answer the multiple choice questions within the time limit. </br>
-             Incorrect answers will penalize your time by 10 seconds.</p>
-        <ul class="questions"> </ul>
+    <div class="container mx-auto px-24 ">
+      <div class="quiz pt-10 mt-10">
+        <h1 class="text-3xl font-roboto">Plant Parent Personality Test</h1>
+        <p class="mt-5 text-xl">Opposites may attract, but when it comes to selecting a houseplant, finding one that mirrors your personality may end up being a better match for you. An indoor plant that shares your 
+          characteristics and traits will fit right into your home and life and can even end up becoming a trusted confidant.
+          </br></br>Take our short quiz to get matched with your perfect plant friend!
+          </p>
+              
+             <ul class="questions mt-5 text-xl"> </ul>
              
-        <button id="timerstart">Start</button>
+        <button class ="uppercase bg-green p-2 mt-5 text-gray hover:text-green-light rounded shadow" id="timerstart">Start</button>
     
     </div>
     </div>
