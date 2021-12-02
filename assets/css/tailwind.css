@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#learn {
+    background-image: url("/assets/images/learn.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
+   }
+
+   #mentor {
+    background-image: url("/assets/images/mentor.jpg");
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    
+   }
+
+
+   /* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 812px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    #name {
+        font-size: 20px;
+    }
+}

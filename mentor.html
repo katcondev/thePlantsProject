@@ -4,70 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Plants Project - Mentor</title> <link href="assets/css/mentorForm.css" rel="stylesheet">
+    <title>The Plants Project - Mentor</title> 
+    <link href="assets/css/tailwind.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/mentorForm.css" rel="stylesheet">
 </head>
-<body class="bg-green-50">
-    <header class="container">
-       <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <span class="font-semibold text-xl tracking-tight text-gray-800"><a href="index.html">The Plants Project</a></span>
-        </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-          </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow">
-            
-            <a href="learn.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-800 mr-4">
-              Learn
-            </a>
-            <a href="mentor.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-800 mr-4">
-              Mentor
-            </a>
-            <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-800 mr-4">
-              Submissions
-            </a>
-            <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-green-800 mr-4">
-              Database
-            </a>
-          </div>
-          <div>
-            <a href="#" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-          </div>
-        </div>
-      </nav>
-    </header>
-    
-    <section>
-      <!--mentor form-->
-    <div class="mentor-form">
-      <h3>Get Started Now!</h3>
-      <p>Fill out this form and become a mentor today!</p>
-      <!--mentor's info-->
-      <form>
-        <label for="firstName">First Name:</label>
-        <input type="text" placeholder="First Name" name="firstName" id="firstName" class="form-input"/>
-        <br/>
+<body class="bg-gray divide-y divide-green">
+  <header class="container">
+    <nav class="flex items-center justify-between flex-wrap bg-gray p-6">
+     <div class="flex items-center flex-shrink-0 text-white mr-6">
+       
+       <a href="index.html"><img class="h-28" src="assets/images/logo.svg"></a>
+       <span class="ml-8 text-green text-4xl font-roboto tracking-tight"  id="name"><a href="index.html">The Plants Project</a></span>
+     </div>
+     <div class="block lg:hidden">
+       <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+       </button>
+     </div>
+     <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+       <div class="text-sm lg:flex-grow">
+       </div>
+       <div>
+         <a href="learn.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Learn </a>
+         <a href="mentor.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Mentor</a>
+         <a href="submissions.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Submissions </a>
+         <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase">Database</a>
+       </div>
+     </div>
+   </nav>
+ </header>  
+ <div class="container"></div>
+   
 
-        <label for="lastName">Last Name:</label>
-        <input type="tel" placeholder="Last Name" name="lastName" id="lastName" class="form-input"/>
-        <br/>
+ <main>
+  <section class="container mx-auto px-10 ">
+    <!--mentor form-->
+  <div class="mentor-form">
+    <h3>Get Started Now!</h3>
+    <p>Fill out this form and become a mentor today!</p>
+    <!--mentor's info-->
+    <form>
+      <label for="firstName">First Name:</label>
+      <input type="text" placeholder="First Name" name="firstName" id="firstName" class="form-input"/>
+      <br/>
 
-        <label for="email">Email Address:</label>
-        <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
-        <br/>
+      <label for="lastName">Last Name:</label>
+      <input type="tel" placeholder="Last Name" name="lastName" id="lastName" class="form-input"/>
+      <br/>
 
-        <label for="mentorsDescription">Tell us more about your houseplant experience</label>
-        <input type="text" placeholder="Your houseplant experience" name="mentorsDescription" id="mentorsDescription" class="form-input"/>
-        <br/>
+      <label for="email">Email Address:</label>
+      <input type="email" placeholder="Email Address" name="email" id="email" class="form-input"/>
+      <br/>
 
-        <button type="submit">
-          Submit
-        </button>
-      </form>
-    </div>
-    </section>
+      <label for="mentorsDescription">Tell us more about your houseplant experience</label>
+      <input type="text" placeholder="Your houseplant experience" name="mentorsDescription" id="mentorsDescription" class="form-input"/>
+      <br/>
+
+      <button type="submit">
+        Submit
+      </button>
+    </form>
+  </div>
+  </section>
+
+
+ </main>
 </body>
 </html>
