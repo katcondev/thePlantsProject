@@ -54,8 +54,10 @@
 }
 
 .timeleft {
-    color: #f2f2f2;
+    display: none;
+    color: #485933
     text-align: center;
+    
 }
 
    /* Portrait and Landscape */
