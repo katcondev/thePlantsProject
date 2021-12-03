@@ -53,12 +53,7 @@
     list-style-type: none;
 }
 
-.timeleft {
-    display: none;
-    color: #485933
-    text-align: center;
-    
-}
+
 
    /* Portrait and Landscape */
 @media only screen 
