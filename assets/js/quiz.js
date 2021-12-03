@@ -23,19 +23,19 @@ var questions =[
         answer: "curly brackets"
     },
     {
-        title: "Colorful plant?",
-        choices: ["nah, not for me", "yes, please"],
-        answer: "all of the above"
+        title: "Favorite bird(after colorful plant)",
+        choices: ["Pelican", "Crane", "Peacock"],
+        answer: "Crane"
     },
     {
-        title: "What sized plant are you looking for?",
-        choices: ["small", "i want them big", "somewhere in between would be cool"],
-        answer: "curly brackets"
+        title: "Where would you like to put your plant?",
+        choices: ["on my shelf", "hanging from my ceiling", "next to my couch/table"],
+        answer: "on my shelf"
     },
     {
-        title: "Colorful plant?",
-        choices: ["nah, not for me", "yes, please"],
-        answer: "all of the above"
+        title: "Choose a beverage",
+        choices: ["sparkling cider","boba","water","coffee"],
+        answer: "coffee"
     },
     
 ]
@@ -141,7 +141,7 @@ function finishQuiz() {
     
     var h1El = document.createElement("h1");
     h1El.setAttribute("id", "create-h1");
-    h1El.textContent = "The quiz is over!"
+    h1El.textContent = "Thanks for filling out the quiz!"
     quizQuestions.appendChild(h1El);
 
     var pEl = document.createElement("p");
@@ -153,13 +153,13 @@ function finishQuiz() {
     if (timeLeft >= 0) {
         var timeScore = timeLeft;
         clearInterval(interval)
-        pEl.textContent = "You scored a total of " + timeScore + ".";
+        pEl.textContent = "We're excited to show you your match!";
         quizQuestions.appendChild(pEl);
     }
     //create label
     var labelEl = document.createElement("label");
     labelEl.setAttribute("id", "label-element");
-    labelEl.textContent = "Please enter your initials: "
+    labelEl.textContent = " Enter your name below and we will show you which plant you matched with! "
 
     quizQuestions.appendChild(labelEl);
 
