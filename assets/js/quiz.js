@@ -125,7 +125,7 @@ function verify(event) {
     questionIndex++;
     if (questionIndex >= questions.length) {
         finishQuiz();
-        createDivEl.textContent = "Your score is: " + score + "/" + questions.length + "."; 
+        createDivEl.textContent = "Your plant score is: " + score; 
     }
     else {
         render(questionIndex);
@@ -140,22 +140,15 @@ function finishQuiz() {
 
     
     var h1El = document.createElement("h1");
-    h1El.setAttribute("id", "create-h1");
-    h1El.textContent = "Thanks for filling out the quiz!"
+    h1El.setAttribute("class", "tex-3xl font-roboto");
+    h1El.textContent = "We're excited to show you your match!"
     quizQuestions.appendChild(h1El);
 
     var pEl = document.createElement("p");
-    pEl.setAttribute("id", "create-p")
+    pEl.setAttribute("class", "text-lg mt-5")
     quizQuestions.appendChild(pEl);
 
-    //adds time remaining to score
-
-    if (timeLeft >= 0) {
-        var timeScore = timeLeft;
-        clearInterval(interval)
-        pEl.textContent = "We're excited to show you your match!";
-        quizQuestions.appendChild(pEl);
-    }
+   
     //create label
     var labelEl = document.createElement("label");
     labelEl.setAttribute("id", "label-element");
@@ -166,7 +159,7 @@ function finishQuiz() {
     //create input
     var inputEl = document.createElement("input");
     inputEl.setAttribute("type", "text");
-    inputEl.setAttribute ("id", "initials")
+    inputEl.setAttribute ("class", "text-xl mt-5")
     inputEl.textContent = "";
 
     quizQuestions.appendChild(inputEl);
@@ -176,7 +169,7 @@ function finishQuiz() {
 
     var submitEl = document.createElement("button");
     submitEl.setAttribute("type", "submit");
-    submitEl.setAttribute ("id", "timerstart")
+    submitEl.setAttribute ("class", "uppercase bg-green p-2 mt-10 text-gray hover:text-green-light rounded shadow text-2xl font-roboto")
     submitEl.textContent = "Submit";
     
     quizQuestions.appendChild(submitEl);

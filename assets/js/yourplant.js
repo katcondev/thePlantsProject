@@ -1,13 +1,5 @@
-var highScore = document.querySelector("#high-score");
-var clearBtn = document.querySelector("#clear-button");
-var backBtn = document.querySelector("#back-button");
+var plantScore = document.querySelector("#plant-score");
 
-//add event listener to clear btn
-
-clearBtn.addEventListener("click", function (){
-    localStorage.clear();
-    location.reload();
-});
 
 //retrieve the local storage
 
@@ -17,15 +9,9 @@ userScores = JSON.parse(userScores);
 
 if (userScores !== null) {
     for (var i = 0; i < userScores.length; i++) {
-        var highScoreEl = document.createElement("li");
-        highScoreEl.textContent = userScores[i].initials + " " + userScores[i].score;
-        highScoreEl.setAttribute("class", "li")
-        highScore.appendChild(highScoreEl);
+        var plantScoreEl = document.createElement("li");
+        plantScoreEl.textContent = userScores[i].initials + " " + userScores[i].score;
+        plantScoreEl.setAttribute("class", "li")
+        plantScore.appendChild(plantScoreEl);
     }
 }
-
-//return to quiz home
-
-backBtn.addEventListener("click", function (){
-    window.location.replace("./learn.html");
-});
