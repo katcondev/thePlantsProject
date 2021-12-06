@@ -41,19 +41,21 @@
    
 }
 
-
 .quiz li:hover {
   background-color:#485933;
   color: #f2f2f2;
 
 }
   .no-bullets {
-   
     text-decoration: none;
     list-style-type: none;
 }
 
-
+.sub-form {
+    padding: 20px;
+    width: 60%;
+   
+}
 
    /* Portrait and Landscape */
 @media only screen 
