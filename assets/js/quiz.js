@@ -3,7 +3,7 @@
 //set of questions array
 var questions =[
     {
-        title: "Do you consider yourself forgetful? (about how often to water a house plant)",
+        title: "Do you consider yourself forgetful?",
         choices: ["I already forgot what I ate for dinner last night", "99% of the time I won’t forget", "I’m alright, not too bad"],
         answer: "99% of the time I won’t forget"
     },
@@ -18,18 +18,13 @@ var questions =[
         answer: "all of the above"
     },  
     {
-        title: "What sized plant are you looking for?",
-        choices: ["small", "i want them big", "somewhere in between would be cool"],
-        answer: "curly brackets"
-    },
-    {
         title: "Favorite bird",
         choices: ["Pelican", "Crane", "Peacock"],
         answer: "Crane"
     },
     {
         title: "Where would you like to put your plant?",
-        choices: ["on my shelf", "hanging from my ceiling", "next to my couch/table"],
+        choices: ["on my shelf", "hanging from my ceiling", "next to my couch or table"],
         answer: "on my shelf"
     },
     {
