@@ -23,7 +23,7 @@ var questions =[
         answer: "curly brackets"
     },
     {
-        title: "Favorite bird(after colorful plant)",
+        title: "Favorite bird",
         choices: ["Pelican", "Crane", "Peacock"],
         answer: "Crane"
     },
