@@ -1,7 +1,6 @@
 var todayDate = document.querySelector('#dateToday');
 var apiKey = 'AIzaSyApqth0vbKHzQ-UhIALlWSotQ_bqSJQ6Ls'
 todayDate.textContent = moment().format("MM-Dd-YYYY")
-
 // MAKE AN ARRAY with all of the videos ID's and Titles
 var plantVideos = [
     {
