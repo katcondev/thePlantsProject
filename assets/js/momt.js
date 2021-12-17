@@ -1,4 +1,4 @@
-var nMoment = moment().format('MMMM Do YYYY, h:mm:ss a');
+var nMoment = moment().format('MMMM Do YYYY');
 var display = $('#currentDay');
 display.text(nMoment);
 //console.log(display);
