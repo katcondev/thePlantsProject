@@ -30,8 +30,7 @@ var loadArtists = function() {
 
 $('#create').click(function(){
     base('plant-mood').create({
-        "Name": "Al Held"
-        ],
+        "Name": "Al Held",
         "On Display?": true
     }, function(err, record) {
         if (err) { console.log(err); return; }
@@ -40,5 +39,3 @@ $('#create').click(function(){
 });
 
 loadArtists();
-
-</script>

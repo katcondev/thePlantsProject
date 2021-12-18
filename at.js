@@ -1,29 +1,57 @@
-var Airtable = require('airtable');
-var base = new Airtable({apiKey: 'keyrnJ3ystlKHJbYv'}).base('appUEHCG0RnYm88pm');
-// const plantsdata = record.get("Name")
+const Airtable = require('airtable');
+const base = new Airtable({apiKey: 'keyrnJ3ystlKHJbYv'}).base('appUEHCG0RnYm88pm');
+const table = base('plant-mood')
 
-base('plant-mood').select({
-    // Selecting the first 3 records in Grid view:
-    maxRecords: 3,
-    view: "Grid view"
-}).eachPage(function page(records, fetchNextPage) {
-    // This function (`page`) will get called for each page of records.
+const getRecords = async () => {
+    const records = await table
+        .select({ maxRecords: 3, view: 'Grid view' })
+        .firstPage();
+     
 
-    records.forEach(function(record) {
-        console.log('Retrieved', record.get('Name'));
-        console.log('Retrieved', record.get('Attachments'));
-        console.log('Retrieved', record.get('Scientific Name'));
-        console.log('Retrieved', record.get('Plant Personality'));
-    });
-    console.log(records)
-    // To fetch the next page of records, call `fetchNextPage`.
-    // If there are more records, `page` will get called again.
-    // If there are no more records, `done` will get called.
-    fetchNextPage();
+    console.log(records);
+    // return records;
+         
+};
 
-}, function done(err) {
-    if (err) { console.error(err); return; }
-});
+getRecords();
+
+
+
+// var loadPlants = function() {
+//     // $('#plants').empty();
+
+//     base('plant-mood').select({
+//          maxRecords: 2,
+//          view: "Grid view"
+//     }).eachPage(function page(records, fetchNextPage) {
+//     // This function (`page`) will get called for each page of records.
+//        records.forEach(function(record) {   
+//         //    console.log(record.get('Name'));
+
+    
+//         //    const Name = [record.get('Name')];
+//         //    const sciName = [record.get('Scientific Name')];
+//         //    return Name;
+//         //    console.log(Name);
+//         //    console.log(sciName);
+        
+        
+//         });
+
+//         fetchNextPage();
+//         console.log(records);
+        
+//     }, function done(err) {
+//        if (err) { console.error(err); return; }
+//        }
+//   );
+  
+// };
+
+// loadPlants();
+
+
+
 
 
 
