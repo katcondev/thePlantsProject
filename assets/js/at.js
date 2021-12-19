@@ -1,6 +1,7 @@
 const token = 'keyrnJ3ystlKHJbYv'
 
-fetch('https://api.airtable.com/v0/appUEHCG0RnYm88pm/plant-mood', {
+
+const info = fetch('https://api.airtable.com/v0/appUEHCG0RnYm88pm/plant-mood', {
     headers: {
         "Content-Type" : "application/json",
         "Authorization": `Bearer ${token}`
@@ -11,8 +12,5 @@ fetch('https://api.airtable.com/v0/appUEHCG0RnYm88pm/plant-mood', {
    .catch( error => console.error(error))
 
 
-
-
-
-
+document.getElementById("plants").innerHTML = `${info}`
 
