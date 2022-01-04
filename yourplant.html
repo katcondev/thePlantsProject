@@ -6,35 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Plants Project - Your Plant!</title>
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css" />
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
 </head>
 <body class="bg-gray divide-y divide-green">
   <div class="flex flex-col h-screen justify-between">
-  <header class="container">
-   
-    <div class="font-sans antialiased" id="app">
-    <nav class="flex items-center justify-between flex-wrap p-6">
-     <div class="flex items-center flex-shrink-0 text-white mr-6">
-       
-       <a href="index.html"><img class="h-28" src="assets/images/logo.svg"></a>
-       <span class="ml-8 text-green text-4xl font-roboto tracking-tight"  id="name"><a href="index.html">The Plants Project</a></span>
-     </div>
-     <div class="block lg:hidden">
-       <button @click="toggle" class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-         <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-       </button>
-     </div>
-     <div :class="open ? 'block': 'hidden'" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-       <div class="text-sm lg:flex-grow">
+    <header class="container" id="header" >
+      <nav class="flex items-center justify-between flex-wrap p-6" >
+       <div class="flex items-center flex-shrink-0 text-white mr-6">
+         
+         <a href="index.html"><img class="h-28 " src="assets/images/logo.svg"></a>
+         <span class="ml-8 text-gray-dark text-4xl font-roboto tracking-tight"  id="name"><a href="index.html">The Plants Project</a></span>
        </div>
-       <div>
-         <a href="learn.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Learn </a>
-         <a href="mentor.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Mentor</a>
-         <a href="submissions.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase"> Submissions </a>
-         <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-green hover:text-green-light mr-4 uppercase">Database</a>
+     
+         
+        <button data-collapse-toggle="mobile-menu" class="md:hidden flex items-center px-3 py-2 border rounded text-green border-green hover:text-white hover:border-white" aria-controls="mobile-menu-2" aria-expanded="false">
+                                                     
+        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+         </button>
+  
+  
+      
+       <div class="hidden md:block w-full md:w-auto block flex-grow lg:flex lg:items-center lg:w-auto" id="mobile-menu">
+         <div class="text-sm lg:flex-grow">
+         </div>
+         <div>
+           <a href="learn.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-dark  hover:text-green-light mr-4 uppercase"> Learn </a>
+           <a href="mentor.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-dark hover:text-green-light mr-4 uppercase"> Mentor</a>
+           <a href="submissions.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-dark hover:text-green-light mr-4 uppercase"> Submissions </a>
+           <a href="database.html" class="block mt-4 lg:inline-block lg:mt-0 text-gray-dark hover:text-green-light mr-4 uppercase">Database</a>
+         </div>
        </div>
-     </div>
-   </nav>
+     </nav>
    </header>  
    <main></main>
            <div class="hwrapper container mx-auto px-24 ">
@@ -66,5 +69,6 @@
                </div>
               
              </div></footer>
-</body>
+ <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+            </body>
 </html>
