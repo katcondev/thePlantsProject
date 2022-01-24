@@ -13,36 +13,35 @@ function getApi(){
         }
    })
    .then(response => response.json())
+   .then(data => console.log(data))
+  //  .then(function (data) {
+  //   //Using console.log to examine the data
+  //   console.log(data.records[1]);
+  //   console.log(data.records[1].fields.Name);
+  //   for (var i = 0; i < data.length; i++) {
+  //     //Creating a h3 element and a p element
+  //     var plantName = document.createElement('h3');
+  //     var plantId = document.createElement('p');
 
-   .then(function (data) {
-    //Using console.log to examine the data
-    console.log(data.records);
-    for (var i = 0; i < data.length; i++) {
-      //Creating a h3 element and a p element
-      var plantName = document.createElement('h3');
-      var plantId = document.createElement('p');
+  //     //Setting the text of the h3 element and p element.
+  //     plantName.textContent = data.records[i].fields.Name;
+  //     plantId.textContent = data.records[i].id;
 
-      //Setting the text of the h3 element and p element.
-      plantName.textContent = data[i].records.fields.Name;
-      plantId.textContent = data[i].records.id;
-
-      //Appending the dynamically generated html to the div associated with the id="users"
-      //Append will attach the element as the bottom most child.
-      // plantsContainer.append(plantName);
-      // plantsContainer.append(plantId);
+  //     //Appending the dynamically generated html to the div associated with the id="users"
+  //     //Append will attach the element as the bottom most child.
+  //     plantsContainer.append(plantName);
+  //     plantsContainer.append(plantId)
+      
+    
       
       
-      console.log(plantId.textContent)
-      
-      
-    }
-  })
-   .catch( error => console.error(error))
+  //   }
+  // })
+  .catch(error => console.log('error', error));
 
-  //  document.getElementById("plants").innerHTML = `
-  //     Just a quick test! `
 
 };
+
 
 
 
