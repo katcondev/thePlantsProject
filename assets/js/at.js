@@ -13,24 +13,29 @@ function getApi(){
         }
    })
    .then(response => response.json())
-   .then(data => console.log(data))
-  //  .then(function (data) {
-  //   //Using console.log to examine the data
-  //   console.log(data.records[1]);
-  //   console.log(data.records[1].fields.Name);
-  //   for (var i = 0; i < data.length; i++) {
-  //     //Creating a h3 element and a p element
-  //     var plantName = document.createElement('h3');
-  //     var plantId = document.createElement('p');
+   .then(records => { 
+    const plant = records;
+    // var output = "";
+    for (var i = 0; i < records.length; i++){
+      //  output +=
+      }
+      document.getElementById("plants").innerHTML = 
+     `<img src="${plant.records[i].fields.Attachments[0].url}" alt="${plant.records[i].fields.Name}" width="${plant.records[i].fields.Attachments[0].width}">
+     </br> 
+     <h1>Name: ${plant.records[i].fields.Name} </h1>
+      <h1> Plant Personality: ${plant.records[i].fields['Plant Personality']} </h1>
+      <h1> Plant Scientific Name: ${plant.records[i].fields['Scientific Name']} </h1>
+      <h1> Type of Lighting: ${plant.records[i].fields['Type of lighting']} </h1>
+      <h1> Water Care: ${plant.records[i].fields['Water Care']} </h1>
+      <h1> Soil Care: ${plant.records[i].fields['Soil Care']} </h1>
+      <h1> Care Instructions: ${plant.records[i].fields['Care Instructions']} </h1>
 
-  //     //Setting the text of the h3 element and p element.
-  //     plantName.textContent = data.records[i].fields.Name;
-  //     plantId.textContent = data.records[i].id;
-
-  //     //Appending the dynamically generated html to the div associated with the id="users"
-  //     //Append will attach the element as the bottom most child.
-  //     plantsContainer.append(plantName);
-  //     plantsContainer.append(plantId)
+     ` 
+  
+     ;
+     
+     console.log(plant)
+   })
       
     
       
