@@ -13,16 +13,18 @@ function getApi(){
         }
    })
    .then(response => response.json())
-   .then(records => { 
-    const plant = records;
+   .then(data => { 
+    const plant = data;
     // var output = "";
-    for (var i = 0; i < records.length; i++){
+    for (var i = 0; i < data.length; i++){
+      console.log(data)
       //  output +=
       }
-      document.getElementById("plants").innerHTML = 
+      plantsContainer.innerHTML = 
      `<img src="${plant.records[i].fields.Attachments[0].url}" alt="${plant.records[i].fields.Name}" width="${plant.records[i].fields.Attachments[0].width}">
      </br> 
      <h1>Name: ${plant.records[i].fields.Name} </h1>
+     </br> 
       <h1> Plant Personality: ${plant.records[i].fields['Plant Personality']} </h1>
       <h1> Plant Scientific Name: ${plant.records[i].fields['Scientific Name']} </h1>
       <h1> Type of Lighting: ${plant.records[i].fields['Type of lighting']} </h1>
