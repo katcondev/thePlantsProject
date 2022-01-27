@@ -1,6 +1,7 @@
 const token = 'keyrnJ3ystlKHJbYv'
 const plantsContainer = document.getElementById("plants")
-getApi();
+const plantsContainer2 = document.getElementById("plant2")
+
 
 function getApi(){
     const requestUrl = 'https://api.airtable.com/v0/appUEHCG0RnYm88pm/plant-mood';
@@ -15,11 +16,14 @@ function getApi(){
    .then(response => response.json())
    .then(records => { 
     const plant = records;
-    // var output = "";
+    var output = [];
     for (var i = 0; i < records.length; i++){
-      console.log(records)
-      //  output +=
-      }
+       output.push();
+       
+      } 
+
+      console.log(output);
+
       plantsContainer.innerHTML = 
      `<img src="${plant.records[i].fields.Attachments[0].url}" alt="${plant.records[i].fields.Name}" width="${plant.records[i].fields.Attachments[0].width}">
      </br> 
@@ -32,22 +36,19 @@ function getApi(){
       <p class="mt-2 text-l"><span style="font-weight:bold"> Soil Care:</span> ${plant.records[i].fields['Soil Care']} </p>
       <p class="mt-2 text-l"><span style="font-weight:bold"> Care Instructions:</span> ${plant.records[i].fields['Care Instructions']} </p>
 
-     ` 
-  
-     ;
+     `;
      
      console.log(plant)
+     
    })
-      
-    
-      
-      
-  //   }
-  // })
+  
+   
   .catch(error => console.log('error', error));
-
-
 };
+
+
+getApi();
+
 
 
 

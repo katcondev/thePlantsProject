@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Plants Project - Database</title>
+        <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
+        <script src="airtable.browser.js"></script>
+        <script src="assets/js/at-test.js"></script>
+        <link href="assets/css/tailwind.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.min.css" />
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+        <script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></script>
+    </head>
+    <body>
+        <h1>Plants</h1>
+        <div id="plants"></div>
+
+    </body>
+
+<script>
+    var Airtable = require('airtable');
+// Get a base ID for an instance of art gallery example
+var base = new Airtable({ apiKey: 'keyrnJ3ystlKHJbYv' }).base('appUEHCG0RnYm88pm');
+
+
+var loadPlants = function() {
+    $('#plants').empty();
+
+    base('plant-mood').select({
+        sort: [
+            {field: 'Name', direction: 'asc'}
+        ]
+    }).eachPage(function page(records, fetchNextPage) {
+        records.forEach(function(record) {
+            console.log('Retrieved ', record.get('Name'));
+
+            var $plantInfo = $('<div>');
+            $plantInfo.append($('<h3>').text(record.get('Name')));
+            $plantInfo.append($('<div>').text(record.get('Attachments')));
+            $plantInfo.append($('<div>').text(record.get('Plant Personality')));
+            $plantInfo.attr('data-record-id', record.getId());
+            $('#plants').append($plantInfo);
+        });
+
+        fetchNextPage();
+    }, function done(error) {
+        console.log(error);
+    });
+};
+
+
+
+loadPlants();
+</script>
+    
+</html>
