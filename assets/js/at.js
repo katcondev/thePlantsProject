@@ -1,6 +1,7 @@
-const token = 'keyrnJ3ystlKHJbYv'
+const token = process.env.AT_token
 const plantsContainer = document.getElementById("plants")
-const plantsContainer2 = document.getElementById("plant2")
+require('dotenv').config();
+
 
 
 function getApi(){
