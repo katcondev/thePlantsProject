@@ -13,37 +13,32 @@ function getApi(){
         }
    })
    .then(response => response.json())
-   .then(records => { 
-    const plant = records;
-    // var output = "";
-    for (var i = 0; i < records.length; i++){
-      console.log(records)
-      //  output +=
-      }
-      plantsContainer.innerHTML = 
-     `<img src="${plant.records[i].fields.Attachments[0].url}" alt="${plant.records[i].fields.Name}" width="${plant.records[i].fields.Attachments[0].width}">
+   .then(data => { 
+    const plant = data.records;
+    for (var i = 0; i < plant.length; i++){
+      console.log(plant[i]);
+      plantsContainer.innerHTML+= 
+     `
+     <div class="max-w-md rounded shadow-md shadow-green">
+          <div class="p-4">
+     <img src="${plant[i].fields.Attachments[0].thumbnails.large.url}" alt="${plant[i].fields.Name}" width="${plant[i].fields.Attachments[0].width}">
      </br> 
-     <h1 class="text-gray-dark text-3xl font-roboto mt-5">${plant.records[i].fields.Name} </h1>
+     <h1 class="text-gray-dark text-3xl font-roboto mt-5">${plant[i].fields.Name} </h1>
      </br> 
-      <p class="mt-2 text-l"><span style="font-weight:bold">Personality:</span> ${plant.records[i].fields['Plant Personality']} </p>
-      <p class="mt-2 text-l"><span style="font-weight:bold">Scientific Name:</span> ${plant.records[i].fields['Scientific Name']} </p>
-      <p class="mt-2 text-l"><span style="font-weight:bold"> Type of Lighting:</span> ${plant.records[i].fields['Type of lighting']} </p>
-      <p class="mt-2 text-l"><span style="font-weight:bold"> Water Care:</span> ${plant.records[i].fields['Water Care']} </p>
-      <p class="mt-2 text-l"><span style="font-weight:bold"> Soil Care:</span> ${plant.records[i].fields['Soil Care']} </p>
-      <p class="mt-2 text-l"><span style="font-weight:bold"> Care Instructions:</span> ${plant.records[i].fields['Care Instructions']} </p>
-
+     <p class="mt-2 text-l"><span style="font-weight:bold">Personality:</span> ${plant[i].fields['Plant Personality']} </p>
+     <p class="mt-2 text-l"><span style="font-weight:bold">Scientific Name:</span> ${plant[i].fields['Scientific Name']} </p>
+     <p class="mt-2 text-l"><span style="font-weight:bold"> Type of Lighting:</span> ${plant[i].fields['Type of lighting']} </p>
+     <p class="mt-2 text-l"><span style="font-weight:bold"> Water Care:</span> ${plant[i].fields['Water Care']} </p>
+     <p class="mt-2 text-l"><span style="font-weight:bold"> Soil Care:</span> ${plant[i].fields['Soil Care']} </p>
+     <p class="mt-2 text-l"><span style="font-weight:bold"> Care Instructions:</span> ${plant[i].fields['Care Instructions']} </p>
+           </div>
+          
      ` 
-  
-     ;
-     
-     console.log(plant)
+    }
+    
    })
       
     
-      
-      
-  //   }
-  // })
   .catch(error => console.log('error', error));
 
 
