@@ -19,7 +19,7 @@ function getApi(){
       console.log(plant[i]);
       plantsContainer.innerHTML+= 
      `
-     <div class="max-w-md rounded shadow-md shadow-green">
+     <div class="max-w-md rounded shadow-md shadow-green mb-4">
           <div class="p-4">
      <img src="${plant[i].fields.Attachments[0].thumbnails.large.url}" alt="${plant[i].fields.Name}" width="${plant[i].fields.Attachments[0].width}">
      </br> 
