@@ -1,4 +1,4 @@
-const token = 'AT_BEAR_TK'
+const token = AT_BEAR_TK
 const plantsContainer = document.getElementById("plants")
 getApi();
 
