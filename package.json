@@ -20,6 +20,7 @@
   "homepage": "https://github.com/katcontrerasdev/thePlantsProject#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "eslint": "^8.9.0",
     "postcss": "^8.4.1",
     "tailwindcss": "^2.2.19",
     "vite": "^2.6.14"
