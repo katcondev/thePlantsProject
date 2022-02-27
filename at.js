@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-const token = "keyrnJ3ystlKHJbYv";
+const token = "process.env.AT_token";
 
 // const token = AT_token;
 const plantsContainer = document.getElementById("plants");
