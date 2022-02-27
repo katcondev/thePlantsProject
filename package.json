@@ -28,7 +28,9 @@
   "dependencies": {
     "@tailwindcss/typography": "^0.4.1",
     "dotenv": "^14.3.2",
+    "express": "^4.17.3",
     "moment": "^2.29.1",
-    "requirejs": "^2.3.6"
+    "path": "^0.12.7",
+    "require": "^2.4.20"
   }
 }
